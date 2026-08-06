@@ -4,9 +4,11 @@ Account Service
 This microservice handles the lifecycle of Accounts
 """
 # pylint: disable=unused-import
-from flask import jsonify, request, make_response, abort, url_for   # noqa; F401
-from service.models import Account
+from flask import abort, jsonify, make_response, request  # noqa; F401
+
 from service.common import status  # HTTP Status Codes
+from service.models import Account
+
 from . import app  # Import Flask application
 
 
